@@ -7,19 +7,19 @@ A lightweight jQuery plugin that replaces native select elements with customizab
 Include jQuery and the plugin.
 
 ```html
-<script src="path/to/jquery.js"></script>
-<script src="path/to/jquery.nice-select.js"></script>
+<script src="path/js/jquery.js"></script>
+<script src="path/js/jquery.nice-select.js"></script>
 ```
 
 Include the plugin styles, either the compiled CSS...
 
 ```html
-<link rel="stylesheet" href="path/to/nice-select.css">
+<link rel="stylesheet" href="path/css/nice-select.css">
 ```
+...or, ideally, compile the Less source code (if you use Less) into your main stylesheet for easier customization.
 
-...or, ideally, import the SASS source (if you use SASS) in your main stylesheet for easier customization.
-
-```./less/nice-select.less
+```
+path/less/nice-select.less
 ```
 
 Finally, initialize the plugin.

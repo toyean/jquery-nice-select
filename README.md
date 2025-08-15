@@ -30,4 +30,4 @@ $(document).ready(function() {
 });
 ```
 
-Full documentation and examples at [jquery-nice-select](https://zbp.toyean.com/jquery-nice-select/).
+Full documentation and examples at <a href="https://zbp.toyean.com/jquery-nice-select/" target="_blank">jquery-nice-select</a>.

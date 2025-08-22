@@ -1,4 +1,4 @@
-/*	jQuery Nice Select - v1.2.1
+/*	jQuery Nice Select - v1.2.2
 	Updated by TOYEAN in August 2025
 	https://www.toyean.com
 **

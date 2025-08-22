@@ -1,4 +1,4 @@
-/*	jQuery Nice Select - v1.2.0
+/*	jQuery Nice Select - v1.2.1
 	Updated by TOYEAN in August 2025
 	https://www.toyean.com
 **
@@ -57,13 +57,22 @@
 
 		function create_nice_select($select) {
 			var isMultiple = $select.attr('multiple');
-			$select.after($('<div></div>')
+			var $niceSelect = $('<div></div>')
 				.addClass('nice-select')
 				.addClass($select.attr('class') || '')
 				.addClass($select.attr('disabled') ? 'disabled' : '')
 				.attr('tabindex', $select.attr('disabled') ? null : '0')
-				.html('<span class="current"></span><ul class="list"></ul>')
-			);
+				.html('<span class="current"></span><ul class="list"></ul>');
+
+			var styleAttr = $select.attr('style');
+			if (styleAttr && styleAttr.includes('width')) {
+				var selectWidth = $select.css('width');
+				if (selectWidth) {
+					$niceSelect.css('width', selectWidth);
+				}
+			}
+
+			$select.after($niceSelect);
 
 			var $dropdown = $select.next();
 			var $options = $select.find('option');
